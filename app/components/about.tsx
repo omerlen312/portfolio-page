@@ -19,7 +19,7 @@ export const About = () => {
               </h3>
               <p className="text-slate-600 dark:text-slate-400 mb-6">
                 With over half a year of experience in web development, I
-                specialize... in absolutely nothing, yet. I'm passionate about
+                specialize... in absolutely nothing, yet. I&apos;m passionate about
                 learning new technologies and working my way into new horizons!
               </p>
               <p className="text-slate-600 dark:text-slate-400 mb-6">
