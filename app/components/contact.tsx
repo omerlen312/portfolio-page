@@ -12,7 +12,6 @@ export const Contact = () => {
     e.preventDefault();
     const form = e.currentTarget; // cache the form reference
     const formData = new FormData(form);
-    // @ts-ignore
     const result = await sendEmail(formData);
     if (result.success) {
       setStatus("Your message has been sent!");
@@ -30,7 +29,8 @@ export const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400">
-            I'm always interested in new opportunities and interesting projects
+            I&apos;m always interested in new opportunities and interesting
+            projects
           </p>
         </div>
 

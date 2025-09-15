@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Opening = () => {
   return (
     <section id="opening" className="pt-16 pb-20 sm:pt-24 sm:pb-32">
@@ -5,10 +7,12 @@ export const Opening = () => {
         <div className="text-center">
           <div className="mb-8">
             <div className="w-48 h-48 mx-auto bg-gradient-to-br rounded-full flex items-center justify-center text-white text-4xl font-bold">
-              <img
-                src="profile.jpg"
+              <Image
+                src="/profile.jpg"
                 alt="Omer Len"
-                className="w-44 h-44 rounded-full object-cover"
+                width={176}
+                height={176}
+                className="rounded-full object-cover"
               />
             </div>
           </div>

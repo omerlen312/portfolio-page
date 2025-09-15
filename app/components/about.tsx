@@ -1,4 +1,3 @@
-import { Opening } from "./opening";
 export const About = () => {
   return (
     <>

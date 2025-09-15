@@ -4,7 +4,7 @@ export const posts: Post[] = [
   {
     id: "first-blog-post",
     title: "Welcome to My Portfolio Blog",
-    content: `This is my first blog post! I'm excited to share my journey as a full-stack developer. In this space, I'll be writing about web development, sharing coding tips, discussing new technologies I'm learning, and documenting my projects.
+    content: `This is my first blog post! I&apos;m excited to share my journey as a full-stack developer. In this space, I&apos;ll be writing about web development, sharing coding tips, discussing new technologies I&apos;m learning, and documenting my projects.
 
 Some topics you can expect to see:
 

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Projects = () => {
   return (
     <section id="projects" className="py-20">
@@ -14,9 +16,11 @@ export const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <img
+            <Image
               src="/miluim picture.png"
               alt="Miluim"
+              width={400}
+              height={192}
               className="h-48 w-full object-cover"
             />
             <div className="p-6">
@@ -53,9 +57,11 @@ export const Projects = () => {
 
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div className="h-48 bg-gradient-to-br from-green-400 to-blue-600">
-              <img
+              <Image
                 src="/burger.png"
                 alt="Burger Emperor"
+                width={400}
+                height={192}
                 className="h-48 w-full object-cover"
               />
             </div>
@@ -92,9 +98,11 @@ export const Projects = () => {
 
           <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div className="h-48 bg-gradient-to-br from-purple-400 to-pink-600">
-              <img
+              <Image
                 src="/Rick-morty.png"
                 alt="Rick and Morty"
+                width={400}
+                height={192}
                 className="h-48 w-full object-cover"
               />
             </div>

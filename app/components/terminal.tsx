@@ -13,7 +13,6 @@ interface TerminalBootLoaderProps {
 }
 
 export const TerminalBootLoader = ({ onComplete }: TerminalBootLoaderProps) => {
-  const [showCursor, setShowCursor] = useState(true);
   const [canSkip, setCanSkip] = useState(false);
 
   useEffect(() => {
@@ -21,11 +20,6 @@ export const TerminalBootLoader = ({ onComplete }: TerminalBootLoaderProps) => {
     const skipTimer = setTimeout(() => {
       setCanSkip(true);
     }, 2000);
-
-    // Blinking cursor effect
-    const cursorInterval = setInterval(() => {
-      setShowCursor((prev) => !prev);
-    }, 500);
 
     // Auto-complete after animation sequence
     const completeTimer = setTimeout(() => {
@@ -35,7 +29,7 @@ export const TerminalBootLoader = ({ onComplete }: TerminalBootLoaderProps) => {
     }, 7500);
 
     // Handle keyboard events
-    const handleKeyPress = (event: KeyboardEvent) => {
+    const handleKeyPress = () => {
       if (canSkip && onComplete) {
         onComplete();
       }
@@ -52,7 +46,6 @@ export const TerminalBootLoader = ({ onComplete }: TerminalBootLoaderProps) => {
     document.addEventListener("click", handleClick);
 
     return () => {
-      clearInterval(cursorInterval);
       clearTimeout(completeTimer);
       clearTimeout(skipTimer);
       document.removeEventListener("keydown", handleKeyPress);
